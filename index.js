@@ -57,7 +57,7 @@ app.use(passport.session())
 
 let url = "mongodb://localhost:27017/Secrets"
 
-let url2 = "mongodb+srv://qwerty:qwerty123@cluster0.5baw8.mongodb.net/SecretsDB"
+let url2 = "mongodb+srv://Zafarbek:1303@its.46cyk.mongodb.net//SecretsDB"
 mongoose.connect(url2, { useNewUrlParser: true, useUnifiedTopology: true })
 
 
