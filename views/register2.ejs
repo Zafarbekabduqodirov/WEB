@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <%if(b==="yes"){%>
+        <h3 class="back-red">Такой email или пароль уже есть</h3>
+        <%}%>
+            <h1>Sign Up</h1>
+
+            <form action="/register" method="post">
+                <!-- <input required placeholder="Name" type="text" name="Name" class="name" id="name"> <br>
+                <input required type="text" placeholder="Last Name" name="surName" class="name" id="name"> <br> -->
+                <input required placeholder="UserName" type="text" name="username" class="name" id="name"> <br>
+                <input required type="password" name="password" placeholder="Password" id=""> <br>
+                <input type="reset" value="Reset">
+                <button type="submit">Submit</button>
+            </form>
+
+            <a class="btn btn-dark btn-lg" href="/login" role="button">Sign In</a>
+
+
+
+
+</body>
+
+</html>

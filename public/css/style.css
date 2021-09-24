@@ -1,0 +1,53 @@
+body {
+    margin: 0 0;
+    background-color: gray;
+}
+
+h3 {
+    background-color: red;
+    padding: 2.5vh;
+    text-align: center;
+    color: white;
+}
+
+form {
+    text-align: center;
+    background-color: lightgreen;
+    width: 20vw;
+    margin: 12.5vh 40vw;
+    padding: 5vh 0;
+    border-radius: 2vw;
+}
+
+h1 {
+    text-align: center;
+    margin: 5vh 0;
+    color: white;
+}
+
+a {
+    width: 10vw;
+    position: absolute;
+    left: 45vw;
+    bottom: 12.5vh;
+}
+
+input {
+    margin: 2.5% 0;
+}
+
+input[type=reset] {
+    border: none;
+    width: 30%;
+    border-radius: .75vw;
+    color: white;
+    background-color: green;
+}
+
+button {
+    border: none;
+    width: 30%;
+    border-radius: .75vw;
+    color: white;
+    background-color: green;
+}
