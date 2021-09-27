@@ -57,27 +57,8 @@ app.use(passport.session())
 
 let url = "mongodb://localhost:27017/Secrets"
 
-let url2 = "mongodb+srv://Zafarbek:1303@its.46cyk.mongodb.net//SecretsDB"
+let url2 = "mongodb+srv://Zafarbek:1303@its.46cyk.mongodb.net/SecretsDB"
 mongoose.connect(url2, { useNewUrlParser: true, useUnifiedTopology: true })
-
-
-let newUser = {
-    secrets: [],
-    username: "salom",
-}
-
-User.register(newUser, "1234", (err, docs) => {
-    if (err) {
-        console.log(err);
-    } else {
-        console.log(docs);
-    }
-})
-
-User.find({}, (err, docs) => {
-    if (err) console.log(err);
-    console.log(docs);
-})
 
 app.listen(process.env.PORT || 3000, () => {
     console.log("Hello world");
